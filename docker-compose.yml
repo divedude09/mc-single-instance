@@ -74,7 +74,7 @@ services:
       STOP_DURATION: "0"   # Graceful shutdown duration in seconds (default: 60)
     ports:
       - "25565:25565"
-      - "25564:25564"
+      - "80:25564"
     volumes:
       - minecraft_data:/data
     restart: unless-stopped
